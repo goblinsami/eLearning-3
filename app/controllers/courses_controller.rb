@@ -6,8 +6,12 @@ class CoursesController < ApplicationController
     @courses = Course.all
   end
 
-  def course
+   def course
     @course = Course.find(params[:id])
+  end
+
+  def video_url
+  gsub(/(<iframe).{38}/, '').gsub(/.(preview).{90}/, '')
   end
 
   # GET /courses/1 or /courses/1.json

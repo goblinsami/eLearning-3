@@ -10,10 +10,8 @@
     </nav>
     <div class="tab-content" id="nav-tabContent">
       <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-        <h2 class="font-weight-bold">Title: <span class="font-weight-normal"><%= @course.present? ? @course&.title : "Welcome" %></span></h2>
-        <% if @course.present? %>
-          <%= render('video') %>
-        <% end %>
+        <h2 class="font-weight-bold">Title: <span class="font-weight-normal">Introduction</span></h2>
+        <h2>File</h2>
       </div>
       <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
         <p class="text-warning">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur similique, aspernatur quidem sapiente doloremque sequi deleniti minima excepturi veniam impedit officiis nobis eos molestiae sunt unde velit quaerat in perspiciatis.</p>
