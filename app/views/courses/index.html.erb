@@ -1,0 +1,12 @@
+<div data-controller="menu" class="container pt-5">
+  <div class="row">
+  <%= render('shared/sidebar') %>
+  <div  class="col-8 bg-warning h-100">
+    <h1 class="text-center">Welcome to the Mooc</h1>
+    <div data-menu-target='container' class="container">
+      <%= render('course_content', course: @course) %>
+    </div>
+  </div>
+</div>
+</div>
+<%= link_to 'New Course', new_course_path %>
