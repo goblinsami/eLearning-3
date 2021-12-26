@@ -11,7 +11,10 @@ class CoursesController < ApplicationController
   end
 
   def video_url
-  gsub(/(<iframe).{38}/, '').gsub(/.(preview).{90}/, '')
+   gsub(/(<iframe).{38}/, '').gsub(/.(preview).{90}/, '')
+  end
+
+  def sidebar_test
   end
 
   # GET /courses/1 or /courses/1.json
