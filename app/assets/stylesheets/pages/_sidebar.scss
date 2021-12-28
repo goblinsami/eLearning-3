@@ -23,6 +23,7 @@ body {
 }
 
 #sidebar-wrapper {
+  border-right: 1px solid lightgray;
   z-index: 1000;
   position: fixed;
   left: 250px;
@@ -30,7 +31,7 @@ body {
   height: 100%;
   margin-left: -250px;
   overflow-y: auto;
-  background: $second-gray;
+  background: #f2f2f2;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -145,8 +146,8 @@ body {
   border-bottom: 1px $second-gray solid;
 }
 .menu-item > a {
-  color: darkgray;
-  font-weight: bold;
+  color: rgb(51, 51, 51);
+
 }
 
 #open-btn {
